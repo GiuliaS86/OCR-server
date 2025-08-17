@@ -18,8 +18,8 @@ def ocr_from_blob():
         file.save("temp.pdf")
 
         # 1. Ricevi il blob e salva come temp.pdf
-        # with open("temp.pdf", "wb") as f:
-        #    f.write(request.data)
+        with open("temp.pdf", "wb") as f:
+            f.write(request.data)
 
         # 2. Converte il PDF in immagini
         images = convert_from_path("temp.pdf")

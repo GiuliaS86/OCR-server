@@ -10,7 +10,7 @@ app = Flask(__name__)
 def home():
     return "✅ OCR server attivo."
 
-@app.route('/ocr', methods=['POST'])
+@app.route('/', methods=['POST'])
 def ocr_from_blob():
     try:
         # ✅ Ricevi il file correttamente da multipart/form-data
